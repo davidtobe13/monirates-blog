@@ -26,12 +26,6 @@ export const deletePost = (id, token) =>
     headers: { "x-auth-token": token },
   });
 
-// Analytics API
-// export const getAnalytics = (token) =>
-//   axios.get(`${API_BASE_URL}/analytics/posts`, {
-//     headers: { "x-auth-token": token },
-//   });
-
 export const getAnalytics = async (token) => {
     const res = await axios.get(`${API_BASE_URL}/analytics/posts`, {
         headers: { "x-auth-token": token },    });

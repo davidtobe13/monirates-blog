@@ -43,10 +43,9 @@ export default function Home() {
       const token = Cookies.get("token");
       if (token) {
         try {
-          const decoded = jwtDecode(token); // Decode token safely
+          const decoded = jwtDecode(token); 
           setUserId(decoded.user.id);
 
-          console.log(decoded.user.id); // Assuming token contains 'id' as the user ID
         } catch (error) {
           console.error("Failed to decode token:", error);
         }
