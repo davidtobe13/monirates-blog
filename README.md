@@ -58,6 +58,7 @@ Navigate to the `client` folder and install dependencies:
 
 ```sh
 cd client
+cd client
 npm install
 ```
 
